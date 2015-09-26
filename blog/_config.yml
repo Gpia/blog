@@ -74,3 +74,6 @@ deploy:
 
 #rss
 rss: /atom.xml
+
+#duoshuo
+duoshuo_shortname: gpia
