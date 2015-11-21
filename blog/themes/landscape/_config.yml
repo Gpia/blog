@@ -18,6 +18,7 @@ widgets:
 - recent_posts
 
 # Miscellaneous
+cnzz_analytics: true,
 google_analytics:
 favicon: /favicon.png
 twitter:

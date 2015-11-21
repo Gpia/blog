@@ -4,8 +4,9 @@
   <% } %>
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+      &copy; <%= date(new Date(), 'YYYY') %> <a href="<%= config.github_page %>"><%= config.author || config.title %></a><br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <span class="cnzz-analytics"><%- partial('_partial/cnzz-analytics') %></span>
     </div>
   </div>
 </footer>

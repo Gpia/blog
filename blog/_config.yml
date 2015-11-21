@@ -3,16 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title:  路漫漫
+title:  在路上
 subtitle: 拉近现实和理想的距离
-description: 技术 博客 lvu gpia 个人 网站 路漫漫
-author: gpia 
+description: 技术 博客 lvu gpia 个人 网站 在路上
+author: gpia
+github_page: https://github.com/gpia
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.lvu.me
+url: http://lvu.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
