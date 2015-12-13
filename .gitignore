@@ -1,2 +1,7 @@
 #排除node_modules
 /blog/node_modules
+.idea/
+blog.iml
+blog/.deploy_git/
+blog/public/
+
