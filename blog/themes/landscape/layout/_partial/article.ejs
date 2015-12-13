@@ -24,16 +24,14 @@
     </div>
     <footer class="article-footer">
      <!-- <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a> -->
-      <%- partial('post/baidu_share') %>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-      <% } %>
       <%- partial('post/tag') %>
+      <%- partial('post/baidu_share') %>
+      <% if (!index){ %>
+        <%- partial('post/nav') %>
+      <% } %>
+      <% if (post.comments && config.duoshuo_shortname){ %>
+        <%- partial('post/duoshuo.ejs') %>
+      <% } %>
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
 </article>
-
-      <%- partial('post/duoshuo.ejs') %>
