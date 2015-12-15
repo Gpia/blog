@@ -88,8 +88,6 @@ qiniu:
   offline: false
   sync: true
   bucket: gpia
-  access_key: mEGqgitKovmXNu61WKZtrQHRXcvBjoeaWafoY3Rp
-  secret_key: 2trdLhnPddM7mU4WFC2rUEqa8lBgHSbuYyf1ksHP
   dirPrefix: static
   urlPrefix: http://7xp584.com1.z0.glb.clouddn.com/static
   local_dir: static
