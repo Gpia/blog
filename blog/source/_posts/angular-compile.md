@@ -1,11 +1,13 @@
 title: angular的DOM编译过程
-categories: [javascript,AngularJS]
+categories: [JavaScript,AngularJS]
 tags: [AngularJS,javascript,compile,编译]
 date: 2015/12/13
 ---
 angular的DOM编译过程总的来说，是编译DOM，生成一个复合链接函数，然后传入scope作为参数，执行该链接函数，在scope和实际的DOM之间建立联系，编译过程结束。
 下面主要来说一下编译DOM并生成链接函数的过程，以下分析基于[angular-1.3.0源码](https://github.com/Gpia/temp-data/blob/master/javascript/lib/angular-1.3.0.js)，由于代码很长，不在此贴出，可点击此链接查看，涉及到的内容主要从6094行开始。
 编译DOM并生成链接函数的过程是由一个叫做compileNodes的内部方法完成的，该方法从一个指定的待编译节点列表开始编译，对于从document元素上启动的angular应用，那么待编译节点列表从一个只包含document元素（内部使用的是document的包装类型，即jqLite(document)）的数组开始，形如 [jqLite(document)]。
+
+<!-- more --> 
 
 一.具体来说compileNodes的过程：
 
@@ -17,8 +19,6 @@ angular的DOM编译过程总的来说，是编译DOM，生成一个复合链接�
 
 还通过上述步骤，compileNodes返回的是一个复合链接函数compositeLinkFn，applyDirectivesToNode返回的是一个普通的链接函数nodeLinkFn，
 复合链接函数用于执行当前节点node的nodeLinkFn和当前节点子节点的childLinkFn，其中由于childLinkFn是由compileNodes的递归调用返回的，所以它是一个复合链接函数，而当前节点的nodeLinkFn是由applyDirectivesToNode返回的，是一个普通的链接函数。即compositeLinkFn的执行到最后都是nodeLinkFn的执行。
-
-<!-- more --> 
 
 实际上，上述步骤3返回的链接函数构成了一个闭包，它在执行时能够访问到上面的linkFns。
 
