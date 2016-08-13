@@ -82,7 +82,7 @@ var str = 'John Smith';
 var newstr = str.replace(reg, '$2, $1');  //使用字符串参数替换
 console.log(newstr);  // Smith, John
 
-//下面写一个转换方法，用于将驼峰式明明转换成-连接
+//下面写一个转换方法，用于将驼峰式命名转换成-连接
 function nameFormat(oldName) {
     return oldName.replace(/[A-Z]/g, function (match) {
         return '-' + match.toLowerCase();
@@ -104,7 +104,7 @@ console.log(str.split(reg));  //["JavaScript", "RegExp", "match", "use"]
 ```
 除了以上内容，还有 RegExp 这个类的一点知识点，每次执行依次正则表达式匹配，那么就会有一些信息被保存在 RegExp 类的静态属性上。RegExp 的 $1 到 $9 保存9个子表达式的匹配文本，lastMatch（简写 $&）是最后一个匹配的串，lastParen（简写 $+）是最后一个子表达式匹配的串，leftContext（简写 $`）是匹配串的左侧的所有文本，rightContext（简写 $'）是匹配串的右侧的所有文本，input 保存当前作用的字符串。
 
-好了，正则表达式中的正则大概讲完了。
+好了，JavaScript中的正则支持大概讲完了。
 
 
 
