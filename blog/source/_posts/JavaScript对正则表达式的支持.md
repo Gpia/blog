@@ -1,7 +1,7 @@
 title: JavaScript对正则表达式的支持
 date: 2016-08-07 18:57:36
 categories: [正则表达式,应用]
-tags: [正则表达式,JavaScript]
+tags: [正则表达式,javascript]
 ---
 
 正则表达式是一种强大的工具，具体语法请看我的另一篇博客[正则表达式入门](/2016/08/07/正则表达式入门/)，现在我们来看看正则表达式在JavaScript中的应用。

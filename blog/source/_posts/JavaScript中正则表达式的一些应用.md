@@ -1,7 +1,7 @@
 title: JavaScript中正则表达式的一些应用
 date: 2016-08-10 22:51:34
 categories: [正则表达式,应用]
-tags: [正则表达式,JavaScript]
+tags: [正则表达式,javascript]
 ---
 
 前面讲了正则表达式的基础知识[正则表达式入门](/2016/08/07/正则表达式入门/)，以及[JavaScript对正则表达的支持](/2016/08/07/JavaScript对正则表达式的支持/)之后，现在来看下正则表达式的应用实例。

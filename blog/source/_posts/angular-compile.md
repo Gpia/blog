@@ -1,6 +1,6 @@
 title: angular的DOM编译过程
 categories: [JavaScript,AngularJS]
-tags: [AngularJS,javascript,compile,编译]
+tags: [angularjs,javascript,compile,编译]
 date: 2015/12/13
 ---
 angular的DOM编译过程总的来说，是编译DOM，生成一个复合链接函数，然后传入scope作为参数，执行该链接函数，在scope和实际的DOM之间建立联系，编译过程结束。

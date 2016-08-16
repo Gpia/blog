@@ -1,7 +1,7 @@
 title: AnglarJS Tips（持续更新）
 date: 2016-05-28 17:16:19
 categories: [JavaScript,AngularJS]
-tags: [AngularJS,javascript,双向绑定,脏数据检测]
+tags: [angularjs,javascript,双向绑定,脏数据检测]
 ---
 
 用AngularJS的人越来越多了，这里有一些重要的问题，可以作为对AngularJS的考察点。
