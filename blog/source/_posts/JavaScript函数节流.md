@@ -1,6 +1,6 @@
 title: JavaScript函数节流
 date: 2016-08-13 23:50:48
-categories: [JavaScript,杂项]
+categories: [JavaScript,技巧]
 tags: [javascript,函数节流]
 ---
 
